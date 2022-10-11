@@ -22,14 +22,11 @@
 					class="form-control" id="username" placeholder="User Name"
 					name="username" required>
 			</div>
-
 			<div class="form-group">
 				<label>Password:</label> <input type="password"
 					class="form-control" id="password" placeholder="Password"
 					name="password" required>
 			</div>
-
-
 			<button type="submit" class="btn btn-primary">Submit</button>
 		</form>
 	</div>

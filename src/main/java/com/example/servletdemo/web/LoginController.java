@@ -20,21 +20,17 @@ import java.io.IOException;
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private LoginDao loginDao;
-
 	public void init() {
 		loginDao = new LoginDao();
 	}
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws IOException {
 		response.sendRedirect("login/login.jsp");
 	}
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		authenticate(request, response);
 	}
-
 	private void authenticate(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
